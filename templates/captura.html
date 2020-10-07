@@ -1,0 +1,13 @@
+<% extend "header.html" %>
+
+<% block body %>
+{{ wtf.quick_form(form) }}
+<h1>Captura de datos</h1>
+
+<form method="POST">
+    {{ form. hidden_tag() }}
+    {{ form.name.label }} {{ form.name(id= 'my-text-field') }}
+    {{ form.amount.label }} {{ form.amount(id= 'my-text-field') }}
+    {{ form.submit()}}
+
+</form>

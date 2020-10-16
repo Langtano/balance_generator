@@ -1,7 +1,7 @@
-<% extend "header.html" %>
+<% extends "header.html" %>
 
 <% block body %>
-{{ wtf.quick_form(form) }}
+
 <h1>Captura de datos</h1>
 
 <form method="POST">
@@ -11,3 +11,5 @@
     {{ form.submit()}}
 
 </form>
+
+<% endblock %>

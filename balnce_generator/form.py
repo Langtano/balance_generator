@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SelectField, SubmitField, validators, FloatField
 from wtforms.validators import DataRequired, length
-
+#from datetime import datetime
 
 class RegistrationForm(FlaskForm):
     name = StringField('Cliente', validators=[DataRequired(), length(min=2, max=30)])

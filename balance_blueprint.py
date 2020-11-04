@@ -7,4 +7,3 @@ balance = Blueprint("balance", __name__, static_folder="static", template_folder
 @balance.route("/")
 def capturadedatos():
     render_template("capturadedatos.html")
-

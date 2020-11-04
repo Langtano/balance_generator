@@ -3,15 +3,28 @@
 <% block body %>
 
 <h1>Captura de datos</h1>
-
-<form method="POST">
+    <form action="" method="POST" novalidate>
+        {{ <form action="" class="hidden_tag"()}}
+    
     {{ form. hidden_tag() }}
-    {{ form.name.label }} {{ form.name(id= 'my-text-field') }}
-    {{ form.amount.label }} {{ form.amount(id= 'my-text-field') }}
+    <p>
+    {{ form.name.label }} <br>
+    {{ form.username }}
+    </p>
+    <p>
+    {{ form.amount.label }}
+    {{ form.amount }}
+    </p>
+    <p>
     {{ form.typ.label }}
+    {{ form.typ }}
+    </p>
+    <p>
     {{ form.isr.label }}
-    {{ form.submit()}}
+    {{ form.isr }}
+    </p>
+    <p>{{ form.submit() }}</p>
 
 </form>
 
-<bdi% endblock %>
+<endblock %>

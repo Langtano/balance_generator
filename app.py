@@ -1,4 +1,5 @@
 from flask import Flask
+from balance_blueprint import balance
 
 app = Flask(__name__)
 

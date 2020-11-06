@@ -8,20 +8,44 @@
     
     {{ form. hidden_tag() }}
     <p>
-    {{ form.name.label }} <br>
-    {{ form.username }}
+        {{ form.dateofissue.label }}
+        {{ form.dateofissue }}
+    </p>    
+    <p>
+        {{ form.name.label }} <br>
+        {{ form.username }}
     </p>
     <p>
-    {{ form.amount.label }}
-    {{ form.amount }}
+        {{ form.amount.label }}
+        {{ form.amount }}
     </p>
     <p>
-    {{ form.typ.label }}
-    {{ form.typ }}
+        {{form.product.label}}
+        {{form.product}}
     </p>
     <p>
-    {{ form.isr.label }}
-    {{ form.isr }}
+        {{ form.typ.label }}
+        {{ form.typ }}
+    </p>
+    <p>
+        {{form.annualrate.label}}
+        {{form.annualrate}}
+    </p> 
+    <p> 
+        {{ form.startdate.label }}
+        {{}form.startdate}
+    </p>   
+    <p>
+        {{ form.isr.label }}
+        {{ form.isr }}
+    </p>
+    <p>
+        {{form.generate.label}}
+        {{form.generate}}
+    </p>
+    <p>
+        {{form.cutoffdate.label}}
+        {{form.cutoffdate}}
     </p>
     <p>{{ form.submit() }}</p>
 

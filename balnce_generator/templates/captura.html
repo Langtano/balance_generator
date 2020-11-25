@@ -1,10 +1,10 @@
-<% extends "header.html" %>
+<% extends "layout.html" %>
 
 <% block body %>
 
 <h1>Captura de datos</h1>
     <form action="" method="POST" novalidate>
-        {{ <form action="" class="hidden_tag"()}}
+        {{ form action="" class="hidden_tag"() }}
     
     {{ form.hidden_tag() }}
     <p>
@@ -12,7 +12,7 @@
         {{ form.dateofissue }}
     </p>    
     <p>
-        {{ form.name.label }} <br>
+        {{ form.name.label }} <br>  
         {{ form.name }}
     </p>
     <p>

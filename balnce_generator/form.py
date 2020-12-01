@@ -14,6 +14,6 @@ class RegistrationForm(FlaskForm):
     annualrate = SelectField('Tasa anual:', choices=["10%"])
     startdate = DateField('Fecha de inicio', default=date.today(), format='%d-%m-%Y')
     isr = SelectField('ISR', choices=['1.04%', '1.45%'])
-    generate = SelectField('Generar', choices=['Estado de cuenta' 'Proyección'])
-    cutoffdate = DateField('Fecha de corte', default=date(), format='%d-%m-%Y')
+    generate = SelectField('Generar', choices=['Estado de cuenta', 'Proyección'])
+    # cutoffdate = DateField('Fecha de corte', default=date(), format='%d-%m-%Y')
     submit = SubmitField('Calcular')

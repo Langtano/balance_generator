@@ -1,14 +1,14 @@
 from balnce_generator import app
-
+from balnce_generator import form
 from flask import render_template
 
 
-
 @app.route('/')
-def index():
-    return "Hello"
+def home():
+    return "Charles, el mundo ya no es como antes"
 
 
 @app.route("/capturadedatos")
 def capturadedatos():
-    return render_template("captura.html")
+    registration_form = form.RegistrationForm('/capturadedatos')
+    return render_template("capture.html", form=registration_form)

@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="content-section">
+	<form>
+		<form method="POST" action="">
+			{{ form.hidden_tag() }}
+			<fieldset class="form-group">
+				<div class="form-group">
+					{{ form.dateofissue.label(class="form-control-label") }}
+					{{ form.dateofissue(class="form-control-lg") }}
+				</div>
+				<div>
+					{{ form.name.label(class="form-control-label") }}
+					{{ form.name(class="form-control-lg") }}
+				</div>
+
+				<div>
+					{{ form.amount.label(class="form-control-label") }}
+					{{ form.amount(class="form-control-lg") }}
+				</div>
+				<div>
+					{{ form.product.label(class="form-control-label") }}
+					{{ form.product(class="form-control-lg") }}
+				</div>
+				<div>
+					{{ form.typ.label(class="form-control-label") }}
+					{{ form.typ(class="form-control-lg") }}
+				</div>
+				<div>
+					{{ form.annualrate.label(class="form-control-label") }}
+					{{ form.annualrate(class="form-control-lg") }}
+				</div>
+				<div>
+					{{ form.startdate.label(class="form-control-label") }}
+					{{ form.startdate(class="form-control-lg") }}
+				</div>
+				<div>
+					{{ form.isr.label(class="form-control-label") }}
+					{{ form.isr(class="form-control-lg") }}
+				</div>
+				<div>
+					{{ form.generate.label(class="form-control-label") }}
+					{{ form.generate(class="form-control-lg") }}
+				</div>
+				<div>
+					{{ form.amount.label(class="form-control-label") }}
+					{{ form.amount(class="form-control-lg") }}
+				</div>
+
+			</fieldset>
+	</form>
+
+</div>
+{% endblock %}

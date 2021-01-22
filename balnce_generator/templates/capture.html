@@ -4,6 +4,7 @@
 <div class="content-section">
 	<form>
 		<form method="POST" action="">
+			{{ form.csrt_token }}
 			{{ form.hidden_tag() }}
 			<fieldset class="form-group">
 				<div class="form-group">
@@ -32,8 +33,8 @@
 					{{ form.annualrate(class="form-control-lg") }}
 				</div>
 				<div>
-					{{ form.startdate.label(class="form-control-label") }}
-					{{ form.startdate(class="form-control-lg") }}
+					{{ form.startdate.label }}
+					{{form.startdate(class='datepicker')}} {{form.hidden_tag()}}
 				</div>
 				<div>
 					{{ form.isr.label(class="form-control-label") }}
@@ -44,8 +45,11 @@
 					{{ form.generate(class="form-control-lg") }}
 				</div>
 				<div>
-					{{ form.amount.label(class="form-control-label") }}
-					{{ form.amount(class="form-control-lg") }}
+					{{ form.cutoffdate.label }}
+					{{form.cutoffdate(class='datepicker')}} {{form.hidden_tag()}}
+				</div>
+				<div>
+					{{form.submit()}}
 				</div>
 
 			</fieldset>

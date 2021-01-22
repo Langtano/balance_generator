@@ -6,3 +6,4 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
 
 from balnce_generator import routes
+from portfolios import *
